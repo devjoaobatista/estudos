@@ -20,6 +20,6 @@ function notaDeAluno (nota) {
     return nota
 }
 
-let nota = 8.1
+let nota = 11.1
 
 console.log(`O aluno recebeu a nota ${notaDeAluno(nota)}`)

@@ -2,10 +2,10 @@
 Este é um repositório para armazenar os meus Estudos da linguagem JavaScript. Aqui você encontrará códigos de exemplo, anotações e outros materiais relacionados à linguagem.
 
 ## Conteúdo
-- [Exemplos de código](exemplos)
-- [Anotações](anotacoes)
-- [Referências](referencias)
-- [Exercicios](exercicios)
+- [Exemplos de código]
+- [Anotações]
+- [Referências]
+- [Exercicios]
 
 
 ## Contribuições

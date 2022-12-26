@@ -23,7 +23,7 @@
 
 * adicionar as rotas do express (get, post, put, delete) para receber e retornar as consultas. exemplo: app.get((require, response) => {return response.send("Todos os usuários"); }); 
 
-* Testar no insomnia para verificar se as rotas estão funcionado
+* Testar no insomnia para verificar se as rotas estão funcionando
 - quando testei no insonmia não funcionou, percebi que esqueci de adicionar nas rotas o endereço que seria acessado, corrigir o código para o seguinte:
 app.get("/server" ,(require, response) => {return response.send("Todos os usuários"); }); e depois adicionei o /server no insomnia e funcionou (Olhei o outro projeto criado no insomnia para descobrir isso)
 

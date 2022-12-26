@@ -29,7 +29,7 @@ app.get("/server" ,(require, response) => {return response.send("Todos os usuár
 
 * adicionar o metodo para tratar informações json enviadas com o seguinte código "app.use(express.json());"
 
-* criar uma variavel que recebe um array de objetos, sendo que cada objeto contem os dados de um usuário;
+* criar uma variável que recebe um array de objetos, sendo que cada objeto contem os dados de um usuário;
 
 * Escrever o código para retornar todos os usuários na rota get
 

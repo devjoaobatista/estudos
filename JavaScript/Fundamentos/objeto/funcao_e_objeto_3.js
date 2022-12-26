@@ -13,3 +13,4 @@ const d3 = new Data(13, 12, 2021);
 console.log(d1);
 console.log(d2);
 console.log(d3);
+console.log(Data);

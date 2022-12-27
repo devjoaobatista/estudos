@@ -5,16 +5,19 @@ app.use(express.json());
 const users = [
     {nome: "Joao", mail: "joao@js.com", fone: 9999999, endereco: "rua 2"},
     {nome: "Pedro", mail: "pedro@js.com", fone: 77777777, endereco: "rua 1"}
-]
+];
 
 app.get("/server", (require, response) => {
-    return response.send(users);
+    const usersWithIndex = users.map((user, id) => ({
+        id, ...user
+    }));    
+    return response.send(usersWithIndex);
 });
 
 
 app.post("/server", (require, response) => {
-    let newuser = require.body
-    users.push(newuser);
+    let newUser = require.body
+    users.push(newUser);
     console.log(users);
     return response.send("Usuário criado");
 });

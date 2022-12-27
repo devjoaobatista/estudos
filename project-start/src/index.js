@@ -8,9 +8,10 @@ const users = [
 ];
 
 app.get("/server", (require, response) => {
-    const usersWithIndex = users.map((user, id) => ({
-        id, ...user
-    }));    
+    const usersWithIndex = users.map((user, id) => {
+        const objectTransformed = { id, ...user }
+        return  objectTransformed;
+    });    
     return response.send(usersWithIndex);
 });
 

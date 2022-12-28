@@ -21,7 +21,7 @@ app.get("/server/:id", (request, response) => {
     const { id } = request.params;
     
     if(id > users.length) {
-        return response.send("Esse ID não existe!");
+        return response.status(404).send("Esse ID não existe!");
     }
     else {
         return response.send(users[id]);
@@ -42,7 +42,7 @@ app.put("/server/:id", (request, response) => {
     const updateUser = request.body;
     
     if(id > users.length) {
-        return response.send("Esse ID não existe");
+        return response.status(404).send("Esse ID não existe");
     }
     else {
         users[id] = updateUser
@@ -56,7 +56,7 @@ app.delete("/server/:id", (request, response) => {
     const { id } = request.params;
     
     if(id > users.length) {
-        return response.send("Esse ID não existe!");
+        return response.status(404).send("Esse ID não existe!");
     }
     else {
         users.splice(id, 1);

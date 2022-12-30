@@ -1,4 +1,4 @@
-# Estudos, testes e rascunhos em JavaScript
+# Estudos, testes e rascunhos
 
 > Este é um repositório para armazenar os meus Estudos. Aqui você encontrará códigos de exemplo, anotações e outros materiais relacionados.
 

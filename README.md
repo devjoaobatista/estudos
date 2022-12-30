@@ -1,8 +1,6 @@
 # Estudos, testes e rascunhos em JavaScript
 
-> Este é um repositório para armazenar os meus Estudos. 
-
-> Aqui você encontrará códigos de exemplo, anotações e outros materiais relacionados à linguagem.
+> Este é um repositório para armazenar os meus Estudos. Aqui você encontrará códigos de exemplo, anotações e outros materiais relacionados à linguagem.
 
 ## Conteúdo
 - [Exemplos de código]

@@ -1,0 +1,1 @@
+en(primeiro => primeiro[0])

@@ -1,1 +1,1 @@
-en(primeiro => primeiro[0])
+10000

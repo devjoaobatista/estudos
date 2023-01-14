@@ -12,3 +12,4 @@ function LogThis() {
 }
 
 LogThis()
+console.log(this)

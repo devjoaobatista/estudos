@@ -32,3 +32,12 @@
     * tcl: transation control lenguage, begin transetion, commit transetion, rollback, controle de transações, controle de troca de troca de valores, por exemplo transferência de valores de contas bancarias
 
 - O sql  é case insensitive, ou seja, não tem problema colocar os comandos como maiusculo ou minusculo
+
+- inner sãos os dados que tem relação, outer são os dados que não tem relação
+
+- Tipos de joins (join só tras os dados que tem inner)
+    * left join: tras tudo que tem na primeira tabela e os dados relacionados na segunda tabela
+
+    * right join: Vai trazer os dados relacionados da primeira tabela e o conteudo da segunda tabela
+
+    * Full join: pega tudo que tem nas duas tabelas (não suportado no mysql, tem como simular)

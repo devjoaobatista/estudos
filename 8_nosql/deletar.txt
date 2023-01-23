@@ -1,0 +1,7 @@
+// o metodo remove() foi descontinuado, agora a gente deleta
+dados utilizando o metodo deleteOne()
+
+
+db.estados.deleteOne(
+    {sigla: "Ac"}
+    )

@@ -1,0 +1,5 @@
+ db.empresas.insert({ nome: "Bradesco", estadoId: ObjectId("63cea60a9fa50d0d9e8ea8d5") })
+
+ // adicionando o objectId do elemento de outra tabela
+ eu consigo relacionar as duas tabelas, dessa forma eu 
+ posso fazer consultas agregadas

@@ -1,0 +1,20 @@
+// estarei salvando as consultas com aggregate aqui para registro
+
+db.estados.aggregate([
+    { $project: {nome: 1, "cidades.nome": 1, _id: 0} }
+])
+
+// No exemplo acima não foi usado dolar, pois o atributo
+está no lado esquerdo, como no exemplo abaixo o atributo
+está no lado direito é necessário usar o dolar para fazer o
+mongo entender que ele precisa resolver o valor.
+
+// Quando eu adiciono um novo objeto dentro do array, ele vai usar
+os dados que foram gerados e tratados no objeto anterior (Semelhante ao 
+.then das promises)
+
+db.estados.aggregate([
+    { $project: {populacao: {$sum: "$cidades.populacao"}, sigla: 1, _id: 0}},
+    { $group: {_id: null, populacaoTotal: {$sum: "$populacao"}} },
+    { $project: {_id: 0, populacaoTotal: 1}}
+])

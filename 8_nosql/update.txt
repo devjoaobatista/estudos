@@ -1,0 +1,22 @@
+db.estados.update(
+    {sigla: "Sp"},
+    {$set: {populacao: 4534000}}
+    )
+
+db.estados.update(
+    {sigla: "Ac"},
+    {$set: {cidades: [{nome: "Rio Branco"}]}}
+    )
+
+// Não é recomendado usar o set em um atributo que contenham
+ mais de um valor, pois ele vai apagar todos os valores do atributo]
+ para adicionar o novo. Caso queira adicionar um valor a mais, utilize
+ o exemplo abaixo.
+
+db.estados.update(
+        {sigla: "Sp"},
+        {$push: {cidades: {nome: "Santos", populacao: 433966}}}
+)
+
+
+// Lembre que no update o primeiro parâmetro vai ser o filtro

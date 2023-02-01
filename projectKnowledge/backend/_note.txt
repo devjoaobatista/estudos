@@ -1,0 +1,9 @@
+* postgres:
+para entrar no postgres eu posso usar os seguintes comandos:
+
+# sudo su postgres (para mudar para o usuário postgres)
+# psql (para entrar no postgres)
+# \l (lista os bancos de dados)
+# \q (sai do postgres)
+# \c nome_do_banco (Conecta com o banco de dados)
+# \dt (Mostra os dados do banco)

@@ -1,22 +1,22 @@
 module.exports = app => {
-    function existsOrError(value, mensage) {
-        if(!value) throw mensage
-        if(Array.isArray(value) && value.length === 0) throw mensage
-        if(typeof value === "string" && !value.trin()) throw mensage
+    function existsOrError(value, msg) {
+        if(!value) throw msg
+        if(Array.isArray(value) && value.length === 0) throw msg
+        if(typeof value === 'string' && !value.trim()) throw msg
     }
     
-    function notExistsOrError(value, mensage) {
-        try{
-            existsOrError(value, mensage)
-        } catch {
+    function notExistsOrError(value, msg) {
+        try {
+            existsOrError(value, msg)
+        } catch(msg) {
             return
         }
-        throw mensage
+        throw msg
     }
     
-    function equalsOrError(valueA, valueB, mensage){
-        if(valueA !== valueB) throw mensage
+    function equalsOrError(valueA, valueB, msg) {
+        if(valueA !== valueB) throw msg
     }
 
-    return {existsOrError, notExistsOrError, equalsOrError}
+    return { existsOrError, notExistsOrError, equalsOrError }
 }

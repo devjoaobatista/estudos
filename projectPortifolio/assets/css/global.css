@@ -1,3 +1,32 @@
 * {
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url("./../fonts/neue-machina-regular.otf");
+}
+
+body {
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);    
+    color: #fff;
+}
+
+.main {
+    margin: 1rem 1rem 100%;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto 100% auto;
+    }
+    .main::before, .main::after {
+        width: 70vw;
+    }
 }

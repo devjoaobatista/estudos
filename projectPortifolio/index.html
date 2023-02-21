@@ -7,22 +7,66 @@
     <title>Portifolio João</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
 
 </head>
 <body>
-    <header class="header">
-        <img src="/assets/img/perfil.jpeg" alt="Foto de João" class="photo">
-        <h1 class="tittle">Olá! Eu sou o João</h1>
-        
-        <div class="information">
-            <p>Desenvolvedor Back-end trainne</p>
-            <p>Belém-Pa</p>
-            <p>(91) 98863-6730</p>
-            <p>dev.joaobatista@gmail.com</p>
-        </div>    
-    </header>
+    <div class="main">
+        <header class="header">
+            <img src="/assets/img/perfil.jpeg" alt="Foto de João" class="photo">
+            <h1 class="title">
+                <span class="ola">Olá!</span> 
+                <br>
+                Eu sou o João.
+            </h1>
+            
+            <div class="information">
+                <p class="job">Desenvolvedor Back-end trainne</p>
+                <p class="location">Belém-Pa</p>
+                <p class="phone">(91) 98863-6730</p>
+                <p class="email">dev.joaobatista@gmail.com</p>
+            </div>    
+        </header>
+        <section class="acordeon">
+            <button class="trigger">Skills</button>
+            <div class="content">
+                <p>habilidades profissionais</p>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger">Idiomas</button>
+            <div class="content">
+                <ul>
+                    <li>Português</li>
+                    <li>Inglês</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger">Educação</button>
+            <div class="content">
+                <p>habilidades profissionais</p>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger">Projetos</button>
+            <div class="content">
+                <p>habilidades profissionais</p>
+            </div>
+        </section>
+
+    
+    </div>
     
 </body>
 </html>

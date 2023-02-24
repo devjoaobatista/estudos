@@ -122,6 +122,14 @@
     text-align: center;
 }
 
+.pokemon {
+    transition: transform .3s;
+}
+
+.pokemon:hover {
+    transform: scale(1.1);
+}
+
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
@@ -161,5 +169,23 @@
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*Animações*/
+
+.pokemon {
+        animation: fromBottom .7s backwards;
+        animation-delay: .3s;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
     }
 }

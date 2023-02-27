@@ -40,6 +40,7 @@
     background-size: contain;
     background-image: url("./../img/icons/arrow.svg");
     color: #fff;
+    transition: .5s;
 }
 
 .acordeon.open .trigger::after {
@@ -47,10 +48,13 @@
 }
 
 .acordeon .content {
-    display: none
+    overflow: hidden;
+    height: 0;
+    transition: .25s;
 
 }
 
 .acordeon.open .content {
     display: inline-block;
+    height: 100%;
 }

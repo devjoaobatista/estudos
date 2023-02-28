@@ -1,0 +1,25 @@
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.languages li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.languages li:before {
+    content: "#";
+    background-size: contain;
+    margin-right: 1rem;
+}

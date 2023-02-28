@@ -1,0 +1,47 @@
+.projects {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.projects li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0; 
+}
+
+.projects li .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+.projects li .title::before {
+    content: "";
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    background-size: contain;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./../img/icons/arrow.svg");
+    rotate: -90deg;
+}
+
+.projects li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience li {
+    margin-bottom: 1rem;
+}
+
+.experience .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experience li .title::before {
+    content: "";
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    background-size: contain;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./../img/icons/arrow.svg");
+    rotate: -90deg;
+}

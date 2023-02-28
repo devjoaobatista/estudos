@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio João</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +17,13 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/acordeon.css">
-
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
 </head>
 <body>
-    <div class="main">
+    <main class="main">
         <header class="header">
             <img src="/assets/img/perfil.jpeg" alt="Foto de João" class="photo">
             <h1 class="title">
@@ -35,16 +40,49 @@
             </div>    
         </header>
         <section class="acordeon">
-            <button class="trigger">Skills</button>
+            <button class="trigger">
+                <h2>Skills</h2>
+            </button>
             <div class="content">
-                <p>habilidades profissionais</p>
+               <div class="Skills">
+                    <section class="hard">
+                        <h3>Hard Skills</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/img/icons/node.svg" alt="node" title="node">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/nestjs.svg" alt="nest" title="nest">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/prismajs.svg" alt="prisma" title="prisma">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/postgres.svg" alt="postgres" title="postgres">
+                            </li>
+                        </ul>   
+                    </section>
+
+                    <section class="soft">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Organização</li>
+                            <li>Comprometimento</li>
+                            <li>Comunicação</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Facilidade com tarefas práticas</li>
+                        </ul>   
+                    </section>
+                </div>
             </div>
         </section>
 
-        <section class="acordeon open">
-            <button class="trigger" type="button">Idiomas</button>
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
             <div class="content">
-                <ul>
+                <ul class="languages">
                     <li>Português</li>
                     <li>Inglês</li>
                 </ul>
@@ -52,21 +90,54 @@
         </section>
 
         <section class="acordeon">
-            <button class="trigger">Educação</button>
+            <button class="trigger">
+                <h2>Educação</h2>
+            </button>
             <div class="content">
-                <p>habilidades profissionais</p>
+                <lu>
+                    <li>Graduação em análise e desenvolvimento de sistemas</li>
+                    <li>Inglês</li>
+                </lu>
             </div>
         </section>
 
         <section class="acordeon">
-            <button class="trigger">Projetos</button>
+            <button class="trigger">
+                <h2>Projetos</h2>
+            </button>
             <div class="content">
-                <p>habilidades profissionais</p>
+                <ul class="projects">
+                    <li>
+                        <span class="title">Projeto 1</span>
+                        <a href="http://wwww.google.com" target="_blank">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptatem ex suscipit eos delectus magni modi exercitationem, dolor eligendi eveniet placeat nesciunt quaerat ullam repudiandae et ratione accusantium error officia.</a>
+                    </li>
+                    <li>
+                        <span class="title">Projeto 2</span>
+                        <a href="http://www.google.com" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam et? Iure natus, nisi ipsam eos quasi beatae reiciendis molestias, enim vel veniam numquam assumenda soluta placeat ut, distinctio nemo.</a>
+                    </li>
+                </ul>                
             </div>
-        </section>
-
-    
-    </div>
+        </section>    
+        <section class="acordeon">
+            <button class="trigger">
+                <h2>Experiência profissional</h2>
+            </button>
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="title">Experiência 1</h3>
+                        <p class="date"> 00/00/0000</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae officia veritatis commodi cum cupiditate ut dignissimos voluptatibus non veniam expedita doloribus quia earum unde velit laudantium exercitationem praesentium quisquam.</p>
+                    </li>
+                    <li>
+                        <h3 class="title">Experiência 2</h3>
+                        <p class="date">00/00/0000</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae officia veritatis commodi cum cupiditate ut dignissimos voluptatibus non veniam expedita doloribus quia earum unde velit laudantium exercitationem praesentium quisquam.</p>
+                    </li>
+                </ul>                
+            </div>
+        </section>    
+    </main>
     <script src="assets/js/acordeon.js"></script>
 </body>
 </html>

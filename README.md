@@ -3,10 +3,10 @@
 > Este é um repositório para armazenar os meus Estudos. Aqui você encontrará códigos de exemplo, anotações e outros materiais relacionados.
 
 ## Conteúdo
-- [Exemplos de código]
-- [Anotações]
-- [Referências]
-- [Exercicios]
+- Exemplos de código
+- Anotações
+- Referências
+- Exercicios
 
 
 ## Contribuições
